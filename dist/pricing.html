@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9F5TX9Y7L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X9F5TX9Y7L');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/app.min.css">
+
+    <script defer src="./js/pricing.js"></script>
+
+    <title>Shipped Brain - Distribute and host ML models</title>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <header class="nav">
+        <div class="nav-item">
+            <div class="text-center">
+                <a href="/" class="brand">
+                    <span class="fade-in brand-primary">S</span>
+                    <span class="fade-in brand-primary brand-title-hide">h</span>
+                    <span class="fade-in brand-primary brand-title-hide">i</span>
+                    <span class="fade-in brand-primary brand-title-hide">p</span>
+                    <span class="fade-in brand-primary brand-title-hide">p</span>
+                    <span class="fade-in brand-primary brand-title-hide">e</span>
+                    <span class="fade-in brand-primary brand-title-hide">d </span>
+                    <span class="fade-in brand-alt">B</span>
+                    <span class="fade-in brand-alt brand-title-hide">r</span>
+                    <span class="fade-in brand-alt brand-title-hide">a</span>
+                    <span class="fade-in brand-alt brand-title-hide">i</span>
+                    <span class="fade-in brand-alt brand-title-hide">n</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-items-right nav-menu-hide-sm">
+            <div class="nav-item">
+                <a href="pricing.html" class="link font-size-1 font-bold">Pricing</a>
+            </div>
+            <div class="nav-item">
+                <a href="http://app.shippedbrain.com" class="btn btn-magenta">Free Trial</a>
+            </div>
+        </div>
+
+        <div class="nav-items-right nav-menu-toggle-container">
+            <div class="nav-item">
+                <span id="navMenuToggle" class="material-icons nav-menu-toggle">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fullscreen menu -->
+    <div id="navbarFullScreen" class="nav-overlay">
+        <a id="navOverlayCloseBtn" href="javascript:void(0)" class="nav-overlay-close-btn">
+            <span class="material-icons">close</span>
+        </a>
+    
+        <div class="nav-overlay-content">
+            <div class="nav-item nav-item-brand">
+                <div class="text-center">
+                    <a href="/" class="brand font-size-2">
+                        <span class="fade-in brand-primary brand-primary-light">S</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">h</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">i</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">p</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">p</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">e</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">d </span>
+                        <span class="fade-in brand-alt brand-primary-light-hover">B</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">r</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">a</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">i</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">n</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="pricing.html" class="link font-bold">Pricing</a>
+            </div>
+            <div class="nav-item">
+                <a href="http://app.shippedbrain.com" class="btn btn-magenta">Free Trial</a>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- Banner -->
+    <div class="developers-banner section-container section-container-lg center-middle bg-gradient-pink">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="font-bold hero-text hero-text-sm">
+                            <div class="fade-in">No matter your needs, we've got you covered.</div>
+                        </div>
+
+                        <div class="m-b-3 fade-in">Whether you're a hobbyist or a large conglomerate, our range of tiers is guaranteed to satisfy your requirements.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing title -->
+    <div class="container text-center m-b-1 m-t-3">
+        <div class="font-size-3 font-bold">Pricing Tiers</div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="summary-container row">
+        <div class="col-12">
+
+            <div class="cards-container p-t-0 p-r-3 p-b-3 p-l-3">
+                <div class="card border-grey-light shadow-light">
+                    <div class="card-header">
+                        <div class="card-title">Free</div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body-content">
+                            <div class="text-center m-b-1">
+                                <span class="font-size-2">0€</span>
+                                <br>
+                                <span class="color-grey-darkened">Limited usage</span>
+                            </div>
+
+                            <div class="container">
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">100 Predictions</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Dashboard</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a href="http://app.shippedbrain.com" target="_blank" class="btn btn-dark d-block">Free Trial</a>
+                    </div>
+                </div>
+
+                <div class="card border-grey-light shadow-light">
+                    <div class="card-header">
+                        <div class="card-title">Premium</div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body-content">
+                            <div class="text-center">
+                                <span class="font-size-2">89€<span class="font-size-1 color-grey-darkened">/month</span></span>
+                                <br>
+                                <span class="color-grey-darkened">For small/medium users</span>
+                            </div>
+
+                            <div class="container">
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">10k Predictions</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">1 Model Deployment</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Dashboard</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Analytics & Reporting</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Private Models</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a href="http://app.shippedbrain.com" target="_blank" class="btn btn-dark d-block">Free Trial</a>
+                    </div>
+                </div>
+
+                <div class="card border-grey-light shadow-light">
+                    <div class="card-header">
+                        <div class="card-title">Advanced</div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body-content">
+                            <div class="text-center">
+                                <span class="font-size-2">199€<span class="font-size-1 color-grey-darkened">/month</span></span>
+                                <br>
+                                <span class="color-grey-darkened">For users requiring high resources</span>
+                            </div>
+
+                            <div class="container">
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">100k Predictions</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">3 Model Deployment</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Dashboard</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Reporting & Analytics</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Private Models</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a href="http://app.shippedbrain.com" target="_blank" class="btn btn-dark d-block">Free Trial</a>
+                    </div>
+                </div>
+
+                <div class="card border-grey-light shadow-light bg-gradient-pink">
+                    <div class="card-header">
+                        <div class="card-title">Enterprise</div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body-content">
+                            <div class="text-center">
+                                <span class="font-size-2">Contact Us</span>
+                                <br>
+                                <span class="color-grey-darkened">For businesses w/ custom requirements</span>
+                            </div>
+
+                            <div class="container">
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Inifinte predictions*</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Unlimited models*</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Dashboard</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Reporting & Analytics</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Private Models</span>
+                                </div>
+                                <div class="price-item-container">
+                                    <span class="material-icons color-green">check_circle</span> <span class="price-item-text">Reserved Instances</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a href="mailto:sales@shippedbrain.com" class="btn btn-magenta d-block">*Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Full features table -->
+    <div id="complete-features" class="summary-container row p-3 mb-2">
+        <div class="col-12">
+            
+            <!-- Features table -->
+            <div class="p-2 rounded shadow">
+                <!-- Features title -->
+                <div class="container text-center m-b-1">
+                    <div class="font-size-3 font-bold">Full feature details</div>
+                </div>
+                
+                <table class="w-100">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Free</th>
+                            <th>Premium</th>
+                            <th>Advanced</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">Price €</td>
+                            <td>0€<span class="color-grey-darkened">/month</span></td>
+                            <td>89€<span class="color-grey-darkened">/month</span></td>
+                            <td>199€<span class="color-grey-darkened">/month</span></td>
+                            <td>Available upon consultation</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Predictions</td>
+                            <td>100<span class="color-grey-darkened">/month</span></td>
+                            <td>10K<span class="color-grey-darkened">/month</span></td>
+                            <td>100K<span class="color-grey-darkened">/month</span></td>
+                            <td>Available upon consultation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="font-bold">Fast Inference Models</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>Available upon consultation</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Dashboard</td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Reporting & Analytics</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Model Deployment</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>Available upon consultation</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Addons*</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td>20€ / 1k increments</td>
+                            <td>20€ / 1k increments</td>
+                            <td>Available upon consultation</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Analytics & Reporting</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Private Models**</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Reserved Instances</td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td><span class="material-icons color-red">cancel</span></td>
+                            <td><span class="material-icons color-green">check_circle</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <small class="color-grey-darkened d-block m-t-1">* Additional predicitons. Are bought on batches of 1k for 20€ each.</small>
+                <small class="color-grey-darkened d-block">** Private models refer to your own deployed models that can either be public or private.</small>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer id="contact" class="w-100 bg-dark p-2">
+        <div class="text-center">
+            <span class="brand">
+                <span class="fade-in brand-primary">S</span>
+                <span class="fade-in brand-primary brand-title-hide">h</span>
+                <span class="fade-in brand-primary brand-title-hide">i</span>
+                <span class="fade-in brand-primary brand-title-hide">p</span>
+                <span class="fade-in brand-primary brand-title-hide">p</span>
+                <span class="fade-in brand-primary brand-title-hide">e</span>
+                <span class="fade-in brand-primary brand-title-hide">d </span>
+                <span class="fade-in brand-alt">B</span>
+                <span class="fade-in brand-alt brand-title-hide">r</span>
+                <span class="fade-in brand-alt brand-title-hide">a</span>
+                <span class="fade-in brand-alt brand-title-hide">i</span>
+                <span class="fade-in brand-alt brand-title-hide">n</span>
+            </span>
+        </div>
+
+        <div class="container text-center m-t-2">
+            <span class="color-grey-darkened d-block">Contact</span>
+            <small>
+                <a href="mailto:info@shippedbrain.com" class="color-grey-light link">info@shippedbrain.com</a>
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>

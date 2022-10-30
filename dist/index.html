@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9F5TX9Y7L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X9F5TX9Y7L');
+    </script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/prettify.css">
+    <link rel="stylesheet" href="./styles/tranquil-heart.min.css">
+    <link rel="stylesheet" href="./styles/app.min.css">
+
+    <script defer src="./js/prettify.js"></script>
+    <script defer>
+        window.onload = (() => { prettyPrint() })
+    </script>
+
+    <title>Shipped Brain - Distribute and host ML models</title>
+</head>
+
+<body>
+    <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/shippedbrain', text: 'Schedule a meeting.', color: '#e0115f', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
+
+    <!-- SVG Gradient -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="bg-gradient-dark" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--color-magenta)" />
+            <stop offset="100%" stop-color="var(--color-grey-darkened)" />
+        </linearGradient>
+    </svg>
+
+    <!-- Nav -->
+    <header class="nav">
+        <div class="nav-item">
+            <div class="text-center">
+                <a href="/" class="brand">
+                    <span class="fade-in brand-primary">S</span>
+                    <span class="fade-in brand-primary brand-title-hide">h</span>
+                    <span class="fade-in brand-primary brand-title-hide">i</span>
+                    <span class="fade-in brand-primary brand-title-hide">p</span>
+                    <span class="fade-in brand-primary brand-title-hide">p</span>
+                    <span class="fade-in brand-primary brand-title-hide">e</span>
+                    <span class="fade-in brand-primary brand-title-hide">d </span>
+                    <span class="fade-in brand-alt">B</span>
+                    <span class="fade-in brand-alt brand-title-hide">r</span>
+                    <span class="fade-in brand-alt brand-title-hide">a</span>
+                    <span class="fade-in brand-alt brand-title-hide">i</span>
+                    <span class="fade-in brand-alt brand-title-hide">n</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-items-right nav-menu-hide-sm">
+            <div class="nav-item fade-in">
+                <a href="#integration" class="link font-size-1 font-bold">How to use</a>
+            </div>
+            <div class="nav-item fade-in">
+                <a href="https://app.shippedbrain.com/faq" target="_blank" class="link font-size-1 font-bold">FAQ</a>
+            </div>
+            <div class="nav-item fade-in">
+                <a href="https://shippedbrain.medium.com/" target="_blank" class="link font-size-1 font-bold">Blog</a>
+            </div>
+            <div class="nav-item fade-in">
+                <a href="https://app.shippedbrain.com" class="btn btn-magenta">Try the app</a>
+            </div>
+        </div>
+
+        <div class="nav-items-right nav-menu-toggle-container">
+            <div class="nav-item fade-in">
+                <span id="navMenuToggle" class="material-icons nav-menu-toggle">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fullscreen menu -->
+    <div id="navbarFullScreen" class="nav-overlay">
+        <a id="navOverlayCloseBtn" href="javascript:void(0)" class="nav-overlay-close-btn">
+            <span class="material-icons">close</span>
+        </a>
+    
+        <div class="nav-overlay-content">
+            <div class="nav-item nav-item-brand fade-in">
+                <div class="text-center">
+                    <a href="/" class="brand font-size-2">
+                        <span class="fade-in brand-primary brand-primary-light">S</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">h</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">i</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">p</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">p</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">e</span>
+                        <span class="fade-in brand-primary brand-primary-light brand-title-hide">d </span>
+                        <span class="fade-in brand-alt brand-primary-light-hover">B</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">r</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">a</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">i</span>
+                        <span class="fade-in brand-alt brand-primary-light-hover brand-title-hide">n</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item fade-in">
+                <a id="navIntegrationLink" href="#integration" class="link font-bold">How to use</a>
+            </div>
+            <div class="nav-item fade-in">
+                <a href="https://app.shippedbrain.com/faq" target="_blank" class="link font-bold">FAQ</a>
+            </div>
+            <div class="nav-item fade-in">
+                <a href="https://shippedbrain.medium.com" target="_blank" class="link font-bold">Blog</a>
+            </div>
+            <div class="nav-item fade-in">
+                <a href="https://app.shippedbrain.com" class="btn btn-magenta">Try the app</a>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- Banner -->
+    <div class="hero full-page center-middle bg-gradient-white-to-grey-500">
+        <div class="container container-lg container-banner">
+            <div class="row">
+
+                <div class="col-5 col-sm-12 fade-in">
+                    <div>
+                        <div class="font-size-5 font-bold hero-text fade-in">
+                            <div>The AI platform to <span class="color-magenta">share and host</span> your models</div>
+                        </div>
+
+                        <div class="m-t-2 color-grey fade-in">Deploy, share and try Machine Learning models fast and easily using our interactive platform and managed infrastructure.</div>
+                    </div>
+
+                    <div class="d-flex align-items-baseline hero-btn-container fade-in">
+                        <a href="#integration" class="link m-t-2 m-r-2 fade-in">How to use</a>
+
+                        <a href="https://app.shippedbrain.com" class="btn btn-magenta shadow m-t-2 m-l-1 fade-in">Try the app</a>
+                    </div>
+
+                </div>
+
+                <div class="col-7 col-sm-12 col-right h-100">
+                    <div class="showcase-img showcase-img-full rounded fade-in hero-video-container text-center">
+                        <iframe src="https://www.youtube.com/embed/sJe7doWt9tQ?loop=1&playlist=sJe7doWt9tQ&autoplay=1&mute=1&controls=0&showinfo=0" frameborder="0" allowfullscreen class="rounded hero-yt-video"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hero-lead-below-container">
+            <div>
+                <a href="#howItWorks">
+                    <span class="material-icons icon-bubble icon-bubble-blue">expand_more</span>
+                    <span class="color-grey-darkened font-bold">How it works</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div id="howItWorks" class="p-t-1 p-b-1 bg-grey-500">
+        <div class="row p-1 m-t-2">
+            <div class="col-12">
+                <div class="container container-lg">
+                    <span class="pre-title color-magenta">How it works</span>
+                    <span class="d-block font-size-2 font-bold">The easiest and fastest way to share, distribute and try AI</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-lg">
+            <div class="row works-row p-1 m-b-2">
+
+                <div class="fade-in showcase-item">
+                    <span class="material-icons font-size-3 color-magenta">flash_on</span>
+                    <h5 class="showcase-item-title">Create public REST endpoints for your models fast and easily</h5>
+
+                    <div class="showcase-list-item">
+                        <span class="material-icons check check-magenta">check</span> 
+                        <span>Focus on training and developing amazing AI by leveraging our straightforward deployments</span>
+                    </div>
+                    <div class="showcase-list-item">
+                        <span class="material-icons check check-magenta">check</span> 
+                        <span>Fully managed REST endpoints for your models, automatically created for you</span>
+                    </div>
+                </div>
+
+                <div class="fade-in showcase-item">
+                    <span class="material-icons font-size-3 color-blue">insights</span>
+                    <h5 class="showcase-item-title showcase-item-title-blue">Reproducible, interactive and insightful Machine Learning</h5>
+
+                    <div class="showcase-list-item">
+                        <span class="material-icons check check-blue">check</span> 
+                        <span>Compare models predictions side-by-side using live REST endpoints</span>
+                    </div>
+                    <div class="showcase-list-item">
+                        <span class="material-icons check check-blue">check</span> 
+                        <span>Get insightful analytics on your work with detailed dashboards and metrics - track models' popularity, discussions and engagement</span>
+                    </div>
+                </div>
+
+                <div class="fade-in showcase-item">
+                    <span class="material-icons font-size-3 color-green">control_camera</span>
+                    <h5 class="showcase-item-title showcase-item-title-green">Create your AI portfolio and share your models</h5>
+
+                    <div class="showcase-list-item">
+                        <span class="material-icons check check-green">check</span>
+                        <span>Create a beautiful AI portfolio with Shipped Brain profiles and hosted model pages</span>
+                    </div>
+                    <div class="showcase-list-item">
+                        <span class="material-icons check check-green">check</span>
+                        <span>Let other users discover and try your work using our interactive web pages that allows anyone to try your models with one click</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Integration -->
+    <div id="integration" class="section-container center-middle">
+        <div class="container container-lg">
+            <div class="row">
+                <!-- Hosted model pages -->
+                <div class="col-6 col-sm-12 align-self-center">
+
+                <!-- Integration title -->
+                <span class="pre-title color-magenta">Use Anywhere</span>
+                    <div class="section-title font-size-2 font-bold">Managed REST endpoints for your models</div>
+
+                    <div class="section-info">Every model uploaded to our platform gets its unique and standardized REST API endpoint automatically that <span class="color-magenta">can be embedded anywhere</span>. Get started with any ML model with no dependencies or downloads, no custom integrations and no infrastructure.</div>
+
+                    <div class="row m-t-3">
+                        <div class="col-12">
+                            <div class="tabs-container tabs-container-dark tabs-container-code">
+                                <div class="slide-text-container active">
+                                    <!-- Sentiment Analysis -->
+                                    <span class="slide-text slide-text">
+                                        <span>shippedbrain.com/api/v0/predict/</span>
+                                        <span class="slide-changeable color-green">sentiment-analysis</span>
+                                        <span>/1</span>
+                                    </span>
+                                    <!-- GPT-3 -->
+                                    <span class="slide-text slide-text">
+                                        <span>shippedbrain.com/api/v0/predict/</span>
+                                        <span class="slide-changeable color-blue">gpt-3</span>
+                                        <span>/1</span>
+                                    </span>
+                                    <!-- Resnet -->
+                                    <span class="slide-text slide-text">
+                                        <span>shippedbrain.com/api/v0/predict/</span>
+                                        <span class="slide-changeable color-yellow">resnet</span>
+                                        <span>/1</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code sections -->
+                <div class="col-6 col-sm-12">
+                    <div class="tabs-container tabs-container-dark tabs-container-code">
+                        <div id="tabHeaderCode" class="tab-header">
+                            <div id="pythonTabToggle" class="tab-pill tab-toggle active" data-target="pythonExample" data-tab-header="tabHeaderCode" data-content-group="tabContentCode" data-type="code">Python</div>
+                            <div id="javascriptTabToggle" class="tab-pill tab-toggle" data-target="javascriptExample" data-tab-header="tabHeaderCode" data-content-group="tabContentCode" data-type="code">JavaScript</div>
+                        </div>
+
+                        <div id="tabContentCode">
+                            <div id="pythonExample" class="tab-content active"></div>
+                            <div id="javascriptExample" class="tab-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-flex-start m-t-5">
+                <!-- An intelligent layer for your tasks -->
+                <div class="col-6 col-sm-12">
+                    <div class="font-size-1-5 font-bold color-magenta fade-in">Fast and straightforward experimentation</div>
+                    
+                    <div class="section-info color-grey fade-in">Verify the performance of any model using benchmark datasets or your own data. You can try any model in the browser or in your code using the model's REST endpoint.</div>
+                </div>
+
+                <!-- Build AI powered applications -->
+                <div class="col-6 col-sm-12">
+                    <div class="font-size-1-5 font-bold color-magenta fade-in">AI with zero dependencies</div>
+
+                    <div class="row gap-sm align-items-flex-start">
+                        <div class="col-12">
+                            <div class="section-info color-grey fade-in">Integrate AI in your tasks seamlessly using any language. With Shipped Brain's REST endpoints switching models is as easy as changing endpoints.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gap-sm">
+            </div>
+        </div>
+    </div>
+
+    <!-- Managed Infrastructure -->
+    <div class="section-container center-middle bg-grey-500">
+        <div class="container container-lg">
+            <div class="row gap-sm">
+                <div class="col-6 col-sm-12 align-self-center">
+                    <div>
+                        <span class="pre-title color-magenta">Managed Infrastructure</span>
+                        <div class="section-title font-size-2 font-bold">Deploy and serve any model in seconds</div>
+
+                        <div class="section-info"><span class="color-magenta">Serverless REST endpoints </span> for your models without having to manage deployments and infrastructure or build custom serving code. Focus on training and developing amazing ML models by leveraging our straightforward deployments. Shipped Brain only requires your pre-trained model.</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-12">
+                    <video src="./assets/videos/deployment.mov" autoplay muted loop class="showcase-img showcase-img-full showcase-video rounded"></video>
+                </div>
+
+                <div class="col-6 col-sm-12">
+                    <div class="row gap-sm">
+                        <div class="col-6 col-sm-12">
+                            <div class="showcase-item fade-in">
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-magenta">check</span> 
+                                    <span>One-click deployments</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-magenta">check</span> 
+                                    <span>Serverless models</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-12">
+                            <div class="showcase-item fade-in">
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-magenta">check</span> 
+                                    <span>Automatic model serving</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-magenta">check</span> 
+                                    <span>Fully managed endpoints</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="col-12">
+                    <span class="d-block p-t-5 p-b-1 font-size-2 font-bold">Build models using the tools you love</span>
+
+                    <!-- Brands -->
+                    <div class="row brands-row p-1">
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/tensorflow-layout.svg" alt="TensorFlow" title="TensorFlow" class="brand-logo m-1">
+                        </div>
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/pytorch.svg" alt="PyTorch" title="PyTorch" class="brand-logo m-1">
+                        </div>
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/XGBoost_logo.png" alt="XGBoost" title="XGBoost" class="brand-logo m-1">
+                        </div>
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/scikit-learn.svg" alt="Scikit-learn" title="Scikit-learn" class="brand-logo m-1">
+                        </div>
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/numpy.svg" alt="NumPy" title="NumPy" class="brand-logo m-1">
+                        </div>
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/pandas.svg" alt="Pandas" title="Pandas" class="brand-logo m-1">
+                        </div>
+                        <div class="fade-in">
+                            <img src="./assets/img/frameworks/python-logo-generic.svg" alt="Python" title="Python" class="brand-logo m-1">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publish and showcase your work -->
+    <div class="section-container center-middle p-b-0">
+        <div class="container container-lg">
+            <div class="row m-b-3">
+                <div class="col-12">
+                    <span class="pre-title font-size-2 color-magenta text-center">Publish and showcase your work</span>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="cards-container gap-md">
+                <!-- Build a home for your AI -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="section-title font-size-2 font-bold color-grey">
+                            <span class="material-icons icon-bubble icon-bubble-blue">apartment</span>
+                            Build a home for your AI
+                        </div>
+
+                        <div class="section-info color-grey">
+                            <div class="showcase-item">
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-blue">check</span>
+                                    <span class="font-size-1-2 color-grey">Show and promote your models across the globe</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-blue">check</span>
+                                    <span class="font-size-1-2 color-grey">Build an interactive data science portfolio</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-blue">check</span>
+                                    <span class="font-size-1-2 color-grey">Share your profile and models on social media platforms with one click</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Distribute and monetize -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="font-size-2 font-bold color-grey">
+                            <span class="material-icons icon-bubble icon-bubble-green">attach_money</span>
+                            Distribute and monetize
+                        </div>
+
+                        <div class="section-info color-grey">
+                            <div class="showcase-item">
+
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-green">check</span>
+                                    <span class="font-size-1-2 color-grey">Connect with other AI practitioners</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-green">check</span>
+                                    <span class="font-size-1-2 color-grey">Public REST endpoints that anyone can try and verify</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-green">check</span>
+                                    <span class="font-size-1-2 color-grey">Link you live models to research papers</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-green">check</span>
+                                    <span class="font-size-1-2 color-grey">Leverage Shipped Brain's profiles and infrastructure to manage your online presence as an AI specialist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dedicated web pages for every model -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="font-size-2 font-bold color-grey">
+                            <span class="material-icons icon-bubble icon-bubble-yellow">web</span>
+                            Dedicated web pages for every model
+                        </div>
+
+                        <div class="section-info color-grey">
+                            <div class="showcase-item">
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-yellow">check</span>
+                                    <span class="font-size-1-2 color-grey">An interactive web page for every model - automatically created and hosted for you</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-yellow">check</span>
+                                    <span class="font-size-1-2 color-grey">In-app experimentation and auto-generated model signatures</span>
+                                </div>
+                                <div class="showcase-list-item">
+                                    <span class="material-icons check check-yellow">check</span>
+                                    <span class="font-size-1-2 color-grey">Enrich your hosted model page with detailed documentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business -->
+    <div class="section-container center-middle bg-grey-500">
+        <div class="container container-lg">
+
+            <!-- A full suite of business features -->
+            <div class="row p-b-5">
+                <div class="col-6 col-sm-12">
+                    <span class="pre-title color-magenta">Insightful analytics</span>
+                    <div class="section-title font-size-2 font-bold">Manage your models and app activity</div>
+
+                    <div class="section-info">Get <span class="color-magenta">complete and accurate records</span> about your models - performance and usage metrics - with a simple and insightful dashboard.</div>
+                </div>
+
+                <div class="col-6 col-sm-12">
+                    <img src="./assets/img/features/dashboard_and_reporting.png" alt="Dashboard and reporting" class="showcase-img showcase-img-full rounded">
+                </div>
+            </div>
+
+            <!-- Use Cases -->
+            <div class="row">
+                <div class="col-12">
+                    <span class="pre-title color-magenta">Use Cases</span>
+                </div>
+            </div>
+
+            <div class="row gap-lg">
+                <div class="col-6 col-sm-12">
+                    <div class="showcase-item">
+                        <!-- Your business -->
+                        <div class="showcase-list-item">
+                            <span class="material-icons check check-green check-lg">attach_money</span>
+                            <span class="font-size-1-2 color-grey">Monetize your live models - set your online presence as an AI specialist</span>
+                        </div>
+
+                        <!-- Drive sales -->
+                        <div class="showcase-list-item">
+                            <span class="material-icons check check-green check-lg">auto_graph</span>
+                            <span class="font-size-1-2 color-grey"><span class="color-magenta">Increase engagement</span> of your models and profile with our insights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-12">
+                    <div class="showcase-item">
+                        <!-- Track model performance -->
+                        <div class="showcase-list-item">
+                            <span class="material-icons check check-blue check-lg">integration_instructions</span>
+                            <span class="font-size-1-2 color-grey">Start building an audience - leverage our managed REST endpoints and hosted model pages that are easy to share</span>
+                        </div>
+
+                        <!-- Inspect profile's preferences -->
+                        <div class="showcase-list-item">
+                            <span class="material-icons check check-yellow check-lg">bar_chart</span>
+                            <span class="font-size-1-2 color-grey">Inspect your profile's preferences - access usage history and patterns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="w-100 bg-footer">
+        <div class="text-center">
+            <a href="#" class="brand">
+                <span class="fade-in brand-primary">S</span>
+                <span class="fade-in brand-primary brand-title-hide">h</span>
+                <span class="fade-in brand-primary brand-title-hide">i</span>
+                <span class="fade-in brand-primary brand-title-hide">p</span>
+                <span class="fade-in brand-primary brand-title-hide">p</span>
+                <span class="fade-in brand-primary brand-title-hide">e</span>
+                <span class="fade-in brand-primary brand-title-hide">d </span>
+                <span class="fade-in brand-alt">B</span>
+                <span class="fade-in brand-alt brand-title-hide">r</span>
+                <span class="fade-in brand-alt brand-title-hide">a</span>
+                <span class="fade-in brand-alt brand-title-hide">i</span>
+                <span class="fade-in brand-alt brand-title-hide">n</span>
+            </a>
+        </div>
+
+        <div class="container text-center m-t-2">
+            <span class="color-grey-darkened d-block">For any questions or additional info, feel free to email us at:</span>
+            <small>
+                <a href="mailto:info@shippedbrain.com" class="color-grey-light link">info@shippedbrain.com</a>
+            </small>
+        </div>
+
+        <div class="row p-t-2">
+            <div class="col-12">
+                <div class="text-center color-magenta">
+                    &copy; Shipped Brain <span id="footerYear"></span>. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>

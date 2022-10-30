@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9F5TX9Y7L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+    
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+    
+            gtag('config', 'G-X9F5TX9Y7L');
+        </script>
+        
+    <link rel="stylesheet" href="./app.min.css">
+
+    <title>Shipped Brain</title>
+</head>
+
+<body>
+    <!-- SVG Gradient -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="bg-gradient-dark" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--color-magenta)" />
+            <stop offset="100%" stop-color="var(--color-grey-darkened)" />
+        </linearGradient>
+    </svg>
+
+    <!-- Nav -->
+    <header class="nav">
+        <div class="nav-item">
+            <div class="text-center">
+                <a href="/" class="brand">
+                    <span class="fade-in brand-primary">S</span>
+                    <span class="fade-in brand-primary brand-title-hide">h</span>
+                    <span class="fade-in brand-primary brand-title-hide">i</span>
+                    <span class="fade-in brand-primary brand-title-hide">p</span>
+                    <span class="fade-in brand-primary brand-title-hide">p</span>
+                    <span class="fade-in brand-primary brand-title-hide">e</span>
+                    <span class="fade-in brand-primary brand-title-hide">d </span>
+                    <span class="fade-in brand-alt">B</span>
+                    <span class="fade-in brand-alt brand-title-hide">r</span>
+                    <span class="fade-in brand-alt brand-title-hide">a</span>
+                    <span class="fade-in brand-alt brand-title-hide">i</span>
+                    <span class="fade-in brand-alt brand-title-hide">n</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-items-right">
+            <div class="nav-item">
+                <a href="/" class="link font-size-1 font-bold">For Businesses</a>
+            </div>
+            <div class="nav-item">
+                <a href="developers.html" class="link font-size-1 font-bold">For Developers</a>
+            </div>
+            <div class="nav-item">
+                <a href="features.html" class="link font-size-1 font-bold">Features</a>
+            </div>
+            <div class="nav-item">
+                <a href="pricing.html" class="link font-size-1 font-bold">Pricing</a>
+            </div>
+            <!-- <div class="nav-item">
+                <a href="quickstart.html" class="link font-size-1 font-bold">Blog</a>
+            </div> -->
+            <div class="nav-item">
+                <a href="#contact" class="link font-size-1 font-bold">Contact</a>
+            </div>
+            <div class="nav-item">
+                <a href="http://app.shippedbrain.com" class="link font-size-1 font-bold color-magenta">Free Trial</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="developers-banner section-container section-container-lg center-middle bg-gradient-pink">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="font-bold hero-text hero-text-sm">
+                            <div class="fade-in">Become a contributor and make AI availabe to everyone.</div>
+                        </div>
+
+                        <div class="m-b-3 fade-in">Earn money and recogntion from your Machine Learning models.</div>
+
+                        <a href="#contact" class="btn btn-magenta">Find out how</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="row p-1 m-t-2">
+        <div class="col-12 text-center">
+            <span class="d-block font-size-2 m-t-1 color-magenta">Deploy Machine Learning models using the frameworks
+                you love.</span>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="row p-1 p-b-2">
+        <div class="col-12 text-center">
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/tensorflow-layout.svg" alt="TensorFlow" title="TensorFlow"
+                    class="brand-logo m-1">
+            </div>
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/pytorch.svg" alt="PyTorch" title="PyTorch" class="brand-logo m-1">
+            </div>
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/XGBoost_logo.png" alt="XGBoost" title="XGBoost" class="brand-logo m-1">
+            </div>
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/scikit-learn.svg" alt="Scikit-learn" title="Scikit-learn"
+                    class="brand-logo m-1">
+            </div>
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/numpy.svg" alt="NumPy" title="NumPy" class="brand-logo m-1">
+            </div>
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/pandas.svg" alt="Pandas" title="Pandas" class="brand-logo m-1">
+            </div>
+            <div class="d-inline-block fade-in">
+                <img src="./assets/img/frameworks/python-logo-generic.svg" alt="Python" title="Python" class="brand-logo m-1">
+            </div>
+        </div>
+    </div>
+
+    <!-- What you get -->
+    <div class="p-2 m-1 bg-dark color-white">
+        <div class="summary-container row p-3">
+            <div class="col-12">
+
+                <h4 class="text-center font-size-3 m-b-3">What you get</h4>
+
+                <div class="cards-container">
+                    <!-- Integration -->
+                    <div class="card color-white">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M420.964,183.81C422.509,91.353,347.746,16,256,16C164.215,16,89.492,91.394,91.036,183.81
+                                            C37.066,211.077,0,266.814,0,331c0,90.981,74.468,165,166,165c33.181,0,64.099-9.854,90-26.775
+                                            C281.901,486.146,312.819,496,346,496c91.532,0,166-74.019,166-165C512,266.814,474.934,211.077,420.964,183.81z M256,46
+                                            c71.443,0,130.091,55.785,134.698,126.083C376.471,168.124,361.481,166,346,166c-33.181,0-64.099,9.854-90,26.776
+                                            C230.099,175.854,199.181,166,166,166c-15.481,0-30.471,2.124-44.698,6.083C125.909,101.785,184.557,46,256,46z M256,230.469
+                                            c22.398,20.073,38.07,47.501,43.184,78.448C285.619,313.509,271.095,316,256,316c-15.095,0-29.619-2.491-43.184-7.083
+                                            C217.93,277.97,233.602,250.543,256,230.469z M184.823,295.661c-32.356-20.158-55.598-53.619-62.023-92.676
+                                            C136.378,198.458,150.905,196,166,196c23.574,0,45.751,6.08,65.059,16.745C208.28,234.891,191.86,263.538,184.823,295.661z
+                                             M280.941,212.745C300.249,202.08,322.426,196,346,196c15.095,0,29.622,2.458,43.2,6.985
+                                            c-6.425,39.057-29.667,72.518-62.023,92.676C320.14,263.538,303.72,234.891,280.941,212.745z M166,466
+                                            c-74.99,0-136-60.561-136-135c0-48.528,25.933-91.151,64.76-114.948c10.61,48.85,42.909,89.705,86.279,111.916
+                                            c-0.856,47.23,18.248,90.398,50.02,121.288C211.751,459.92,189.574,466,166,466z M256,431.53
+                                            c-25.545-22.894-42.341-55.353-44.703-91.688C225.52,343.851,240.513,346,256,346s30.48-2.149,44.703-6.157
+                                            C298.341,376.178,281.545,408.637,256,431.53z M346,466c-23.574,0-45.751-6.08-65.059-16.745
+                                            c31.765-30.883,50.877-74.048,50.02-121.288c43.37-22.211,75.669-63.065,86.279-111.916C456.067,239.849,482,282.472,482,331
+                                            C482,405.439,420.99,466,346,466z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <span class="card-title color-magenta">Managed Infrastructure</span>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <span class="card-body-content">Leverage Shipped Brain's fully managed infrastructure -
+                                model instances that scale for any needs with no extra charge. Manage your models with
+                                our powerful tool.</span>
+                        </div>
+                    </div>
+
+                    <!-- Deployment & Serving -->
+                    <div class="card color-white">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="m350.3,255.1c7.9-87.6-22.7-176.9-86.9-241.1-3.9-3.9-10.8-3.9-14.7,0-64.2,64.2-94.8,153.4-86.9,241.1-22.2,23.9-34.4,54.7-34.4,87.5 0,33.1 12.6,64.6 35.5,88.6 5.6,5.9 19.9,3.2 17.6-9.8-1.2-6.8-2.7-13.4-2.7-19.9 0-16.2 4.9-31.6 14-44.6 1.5,0.8 3.2,1.3 5,1.3h118.5c1.8,0 3.5-0.5 5-1.3 9.1,13 14,28.4 14,44.6 0,6.5-1.7,13-2.7,19.9-2.1,14.4 12.9,14.9 17.6,9.8 22.8-24.1 35.5-55.5 35.5-88.6-0.1-32.8-12.2-63.7-34.4-87.5zm-94.3-218.7c18.6,20 33.8,42.5 45.6,66.4h-91.1c11.7-24 26.9-46.4 45.5-66.4zm-98,351c-6.4-13.9-9.7-29.1-9.7-44.8 0-21.2 6.1-41.5 17.5-58.9 0.1,0.8 11,42.5 15.2,53.2-12.5,14.4-20.4,31.8-23,50.5zm150.4-50.1h-104.8c-29.4-69-29.1-146.1-2.4-213.8h109.6c26.7,67.7 27,144.8-2.4,213.8zm22.7-.4c5.8-14.9 15.1-52.6 15.2-53.2 11.4,17.3 17.5,37.6 17.5,58.9 0,15.7-3.4,30.9-9.7,44.8-2.7-18.7-10.6-36.1-23-50.5z" />
+                                            <path
+                                                d="m213.9,375.6c-5.8,0-10.4,4.7-10.4,10.4v52.3c0,5.8 4.7,10.4 10.4,10.4s10.4-4.7 10.4-10.4v-52.3c0-5.8-4.7-10.4-10.4-10.4z" />
+                                            <path
+                                                d="m256,375.6c-2.9,0-5.5,1.2-7.4,3.1 0,0 0,0-0.1,0.1-1.2,1.2-2.1,2.8-2.6,4.6-0.2,0.9-0.4,1.8-0.4,2.8v104.5c0,0.8 0.1,1.6 0.3,2.4 1.1,4.6 5.2,8 10.1,8s9-3.4 10.1-8c0.2-0.8 0.3-1.6 0.3-2.4v-104.7c0-1-0.1-1.9-0.4-2.8-1.1-4.4-5.1-7.6-9.9-7.6z" />
+                                            <path
+                                                d="m298.1,375.6c-5.8,0-10.4,4.7-10.4,10.4v52.3c0,5.8 4.7,10.4 10.4,10.4s10.4-4.7 10.4-10.4v-52.3c0.1-5.8-4.6-10.4-10.4-10.4z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <span class="card-title color-magenta">Deployment & Serving</span>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <span class="card-body-content">Focus on building amazing ML models. Deploy fully managed
+                                and scalable ML models with one click and no extra code. Every model gets its unique
+                                standardized API endpoint.</span>
+                        </div>
+                    </div>
+
+                    <!-- Showcase -->
+                    <div class="card color-white">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 480.001 480.001" style="enable-background:new 0 0 480.001 480.001;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M327.72,197.831c-0.083-0.246-0.182-0.486-0.296-0.72c-0.133-0.404-0.296-0.797-0.488-1.176
+			c-0.17-0.256-0.354-0.501-0.552-0.736c-0.209-0.318-0.442-0.621-0.696-0.904c-0.237-0.21-0.486-0.408-0.744-0.592
+			c-0.254-0.231-0.521-0.447-0.8-0.648l-80-48c-2.535-1.523-5.705-1.523-8.24,0l-80,48c-0.296,0.195-0.577,0.411-0.84,0.648
+			c-0.261,0.184-0.512,0.382-0.752,0.592c-0.249,0.283-0.479,0.582-0.688,0.896c-0.203,0.236-0.39,0.484-0.56,0.744
+			c-0.188,0.369-0.348,0.751-0.48,1.144c-0.114,0.248-0.216,0.502-0.304,0.76c-0.187,0.675-0.281,1.372-0.28,2.072v80
+			c0.001,2.808,1.473,5.41,3.88,6.856l80,48l0.088,0.04l0.088,0.064c0.42,0.218,0.859,0.398,1.312,0.536
+			c0.184,0.064,0.36,0.168,0.552,0.224c1.362,0.373,2.799,0.373,4.16,0c0.192-0.056,0.368-0.16,0.552-0.224
+			c0.453-0.138,0.892-0.318,1.312-0.536l0.088-0.064l0.088-0.04l80-48c2.407-1.446,3.879-4.048,3.88-6.856v-80
+			C328.001,199.209,327.906,198.509,327.72,197.831z M240,161.239l24.448,14.672L200,214.583l-24.448-14.672L240,161.239z
+			 M232,313.775l-64-38.4v-61.336l64,38.4V313.775z M240,238.583l-24.448-14.672L280,185.239l24.448,14.672L240,238.583z
+			 M312,275.383l-64,38.4v-61.344l64-38.4V275.383z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M246.4,3.111c-2.908-3.535-8.131-4.042-11.666-1.134c-0.414,0.34-0.794,0.72-1.134,1.134l-24,32l12.8,9.6l9.6-12.8v64h16
+			v-64l9.6,12.8l12.8-9.6L246.4,3.111z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M257.6,435.111l-9.6,12.8v-64h-16v64l-9.6-12.8l-12.8,9.6l24,32c2.651,3.535,7.665,4.251,11.2,1.6
+			c0.606-0.455,1.145-0.994,1.6-1.6l24-32L257.6,435.111z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="232" y="111.911" width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="232" y="351.911" width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M96,231.911H32l12.8-9.6l-9.6-12.8l-32,24c-3.535,2.651-4.251,7.665-1.6,11.2c0.455,0.606,0.994,1.145,1.6,1.6l32,24
+			l9.6-12.8l-12.8-9.6h64V231.911z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M478.4,235.111c-0.455-0.606-0.994-1.145-1.6-1.6l-32-24l-9.6,12.8l12.8,9.6h-64v16h64l-12.8,9.6l9.6,12.8l32-24
+			C480.335,243.66,481.051,238.646,478.4,235.111z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="112" y="231.911" width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="352" y="231.911" width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M143.832,132.431L98.584,87.183l15.832,2.256l2.264-15.84l-39.592-5.688c-4.37-0.649-8.439,2.368-9.088,6.739
+			c-0.116,0.779-0.116,1.571,0,2.349l5.656,39.592l15.84-2.264L87.24,98.495l45.248,45.248L143.832,132.431z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M411.984,402.823l-5.656-39.592l-15.856,2.28l2.256,15.832l-45.248-45.248l-11.312,11.312l45.248,45.248l-15.816-2.272
+			l-2.264,15.84l39.592,5.656c0.376,0.054,0.756,0.081,1.136,0.08c4.418,0.001,8-3.581,8.001-7.999
+			C412.066,403.58,412.038,403.2,411.984,402.823z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="147.151" y="147.063"
+                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -64.2037 155.1248)"
+                                                width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="316.862" y="316.759"
+                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -134.4897 324.8318)"
+                                                width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M98.552,392.639l45.248-45.248l-11.28-11.312l-45.248,45.248l2.256-15.832l-15.84-2.264L68,402.823
+			c-0.627,4.373,2.409,8.427,6.783,9.055c0.377,0.054,0.757,0.081,1.137,0.081c0.38,0.001,0.76-0.026,1.136-0.08l39.592-5.656
+			l-2.264-15.84L98.552,392.639z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M409.704,70.207c-1.774-1.793-4.297-2.634-6.792-2.264l-39.592,5.656l2.264,15.84l15.832-2.256l-45.248,45.248
+			l11.312,11.312l45.248-45.248l-2.256,15.816l15.84,2.28l5.656-39.592C412.326,74.505,411.487,71.989,409.704,70.207z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="147.158" y="316.767"
+                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -184.1999 204.8355)"
+                                                width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <rect x="316.862" y="147.032"
+                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -14.4738 275.1211)"
+                                                width="16" height="16" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <span class="card-title color-magenta">Distribution</span>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <span class="card-body-content">Make your models available worldwide across any platform.
+                                Empower users with your ML and start building your interactive data science
+                                portfolio.</span>
+                        </div>
+                    </div>
+
+                    <!-- Monetization -->
+                    <div class="card color-white">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px"
+                                    height="47px" viewBox="0 0 47 47" style="enable-background:new 0 0 47 47;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M23.501,7.705c0.55,0,1-0.45,1-1V1c0-0.55-0.45-1-1-1s-1,0.45-1,1v5.704C22.501,7.254,22.951,7.705,23.501,7.705z" />
+                                            <path
+                                                d="M23.501,39.295c-0.55,0-1,0.45-1,1V46c0,0.55,0.45,1,1,1s1-0.45,1-1v-5.704C24.501,39.746,24.051,39.295,23.501,39.295z" />
+                                            <path d="M8.299,6.884c-0.389-0.389-1.025-0.389-1.414,0c-0.389,0.389-0.389,1.025,0,1.414l4.033,4.032
+			c0.389,0.389,1.025,0.389,1.414,0.001c0.388-0.389,0.388-1.025-0.001-1.414L8.299,6.884z" />
+                                            <path d="M36.084,34.67c-0.389-0.389-1.025-0.389-1.414-0.001c-0.388,0.39-0.388,1.024,0.001,1.414l4.032,4.033
+			c0.389,0.389,1.025,0.389,1.414,0c0.389-0.39,0.389-1.025,0-1.414L36.084,34.67z" />
+                                            <path
+                                                d="M7.705,23.5c0-0.55-0.45-1-1-1H1c-0.55,0-1,0.45-1,1s0.45,1,1,1h5.705C7.255,24.5,7.705,24.05,7.705,23.5z" />
+                                            <path
+                                                d="M46,22.5h-5.705c-0.55,0-1,0.45-1,1s0.45,1,1,1H46c0.55,0,1-0.45,1-1S46.55,22.5,46,22.5z" />
+                                            <path d="M10.918,34.67l-4.033,4.032c-0.389,0.389-0.389,1.024,0,1.414c0.389,0.389,1.025,0.389,1.414,0l4.032-4.033
+			c0.389-0.39,0.389-1.024,0.001-1.414C11.943,34.282,11.307,34.282,10.918,34.67z" />
+                                            <path d="M36.082,12.331l4.035-4.032c0.389-0.389,0.389-1.025,0-1.414c-0.389-0.389-1.025-0.389-1.414,0l-4.034,4.033
+			c-0.39,0.389-0.39,1.025-0.001,1.414C35.057,12.719,35.693,12.719,36.082,12.331z" />
+                                            <path
+                                                d="M30.586,23.163c-0.578-0.414-1.234-0.748-1.975-0.998c-0.737-0.247-1.495-0.461-2.272-0.638
+			c-0.623-0.145-1.231-0.276-1.838-0.404v-4.171c0.447,0.091,0.86,0.229,1.233,0.425c0.703,0.36,1.093,1.059,1.166,2.085h5.072
+			c-0.1-1.204-0.406-2.199-0.918-2.988c-0.516-0.788-1.16-1.421-1.938-1.899c-0.777-0.474-1.658-0.813-2.648-1.014
+			c-0.643-0.131-1.302-0.203-1.969-0.248V11h-2V13.3c-0.736,0.039-1.464,0.108-2.176,0.24c-1.002,0.189-1.904,0.516-2.705,0.979
+			c-0.801,0.463-1.447,1.103-1.936,1.915c-0.486,0.817-0.73,1.838-0.73,3.064c0,0.851,0.174,1.572,0.525,2.158
+			c0.35,0.592,0.813,1.08,1.389,1.47c0.578,0.388,1.234,0.699,1.975,0.938c0.738,0.242,1.496,0.441,2.273,0.621
+			c0.487,0.103,0.948,0.203,1.385,0.304v5.061c-0.117-0.022-0.236-0.036-0.352-0.065c-0.49-0.127-0.92-0.319-1.297-0.582
+			c-0.377-0.262-0.682-0.604-0.92-1.016c-0.24-0.414-0.359-0.91-0.359-1.482H14.5c0.051,1.273,0.346,2.354,0.884,3.229
+			c0.538,0.877,1.226,1.588,2.067,2.125c0.838,0.539,1.797,0.922,2.873,1.145c0.713,0.149,1.441,0.231,2.176,0.283V36h2v-2.304
+			c0.805-0.045,1.6-0.129,2.381-0.297c1.064-0.222,2.014-0.599,2.84-1.125c0.824-0.525,1.494-1.223,2.008-2.084
+			c0.515-0.867,0.771-1.938,0.771-3.215c0-0.902-0.176-1.658-0.527-2.272C31.622,24.089,31.161,23.574,30.586,23.163z
+			 M22.185,20.532c-0.563-0.189-1.021-0.435-1.369-0.733c-0.353-0.3-0.525-0.689-0.525-1.166c0-0.401,0.098-0.719,0.3-0.955
+			c0.198-0.24,0.442-0.42,0.733-0.545c0.287-0.126,0.605-0.208,0.956-0.245c0.08-0.008,0.145-0.007,0.222-0.013v3.751
+			C22.397,20.593,22.283,20.563,22.185,20.532z M26.827,28.875c-0.228,0.312-0.509,0.562-0.849,0.748
+			c-0.336,0.189-0.711,0.327-1.125,0.416c-0.119,0.025-0.235,0.039-0.354,0.059v-4.595c0.395,0.121,0.758,0.248,1.066,0.384
+			c0.513,0.227,0.908,0.482,1.184,0.771c0.275,0.287,0.412,0.633,0.412,1.033C27.163,28.165,27.055,28.561,26.827,28.875z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <span class="card-title color-magenta">Monetization</span>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <span class="card-body-content">Earn money every time someone uses or subscribes to your
+                                models. We handle worldwide payment processing.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- All you have to do is -->
+    <div class="section-container center-middle m-1">
+        <div class="summary-container row p-3">
+            <div class="col-12">
+
+                <h4 class="text-center font-size-3 color-magenta m-b-3">All you have to do is</h4>
+
+                <div class="circle-container">
+                    <!-- Create an account -->
+                    <div class="circle bg-dark color-white">
+                        <div class="circle-header">
+                            <div class="circle-pre-title color-magenta">1</div>
+                            <span class="circle-title">Create a free account</span>
+                        </div>
+
+                        <div class="circle-divider"></div>
+
+                        <div class="circle-body text-center">
+                            <span class="circle-body-content">Sign up and build your free Shipped Brain profile.</span>
+                        </div>
+                    </div>
+
+                    <!-- Train a machine learning model -->
+                    <div class="circle bg-dark color-white">
+                        <div class="circle-header">
+                            <div class="circle-pre-title color-magenta">2</div>
+                            <span class="circle-title">Build a Machine Learning model</span>
+                        </div>
+
+                        <div class="circle-divider"></div>
+
+                        <div class="circle-body text-center">
+                            <span class="circle-body-content">Build Machine Learning models using the frameworks you
+                                know.</span>
+                        </div>
+                    </div>
+
+                    <!-- Upload a model to Shipped Brain with one-click -->
+                    <div class="circle bg-dark color-white">
+                        <div class="circle-header">
+                            <div class="circle-pre-title color-magenta">3</div>
+                            <span class="circle-title">Upload your ML model</span>
+                        </div>
+
+                        <div class="circle-divider"></div>
+
+                        <div class="circle-body text-center">
+                            <span class="circle-body-content">
+                                Upload your ML model. Distribution made easy with automated serving.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="m-t-3 text-center">
+                    <a href="#contact" class="btn btn-magenta">Get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Become a contributor -->
+    <div class="container text-center m-t-5">
+        <div class="font-size-3 font-bold">Become a contributor</div>
+        <div class="waitlist-info-text m-b-2">Get unique premium benefits and be notified when Shipped Brain for develoeprs becomes available.</div>
+    </div>
+
+    <!-- Wait list -->
+    <div id="contact" class="waitlist-container container m-t-1 m-b-5">
+        <div class="waitlist-container fill-space bg-dark color-white text-center p-t-2 p-b-2 p-l-5 p-r-5 rounded shadow">
+            <div class="container">
+                <!-- <div class="font-size-3 font-bold">Get early access</div>
+                <div class="m-t-1 m-b-3">Get premium benefits and be notified when Shipped Brain becomes available.</div> -->
+
+                <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="https://shippedbrain.us2.list-manage.com/subscribe/post?u=a85a95477e7ca7d57650a2739&amp;id=2b99d42194" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll" class="d-flex justify-content-center" style="flex-direction: column; text-align: left;">
+
+                            <div class="mc-field-group form-group">
+                                <label for="mce-EMAIL" class="d-block">Email Address<span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" style="max-width: 100% !important;">
+                            </div>
+
+                            <div class="mc-field-group input-group">
+                                <span>Which feature do you need the most? <span class="asterisk">*</span></span>
+
+                                <ul style="list-style-type: none;">
+                                    <li>
+                                        <input type="radio" value="Seamless AI Integration" name="MMERGE1" id="mce-MMERGE1-0">
+                                        <label for="mce-MMERGE1-0" class="color-grey-light">Seamless AI Integration</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" value="Model Discoverability" name="MMERGE1" id="mce-MMERGE1-1">
+                                        <label for="mce-MMERGE1-1" class="color-grey-light">Model Discoverability</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" value="Instant Model Deployment &amp; Serving" name="MMERGE1" id="mce-MMERGE1-2">
+                                        <label for="mce-MMERGE1-2" class="color-grey-light">Instant Model Deployment &amp; Serving</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" value="Model Distribution and Showcase" name="MMERGE1" id="mce-MMERGE1-3">
+                                        <label for="mce-MMERGE1-3" class="color-grey-light">Model Distribution and Showcase</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" value="Model Monetization" name="MMERGE1" id="mce-MMERGE1-4">
+                                        <label for="mce-MMERGE1-4" class="color-grey-light">Model Monetization</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_a85a95477e7ca7d57650a2739_2b99d42194" tabindex="-1" value="">
+                            </div>
+
+                            <div class="clear">
+                                <div class="form-group btn-group-container">
+                                    <input type="submit" value="Join Us" name="subscribe" id="mc-embedded-subscribe" class="btn btn-magenta" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--End mc_embed_signup-->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="w-100 bg-dark p-2">
+        <div class="text-center">
+            <span class="brand">
+                <span class="fade-in brand-primary">S</span>
+                <span class="fade-in brand-primary brand-title-hide">h</span>
+                <span class="fade-in brand-primary brand-title-hide">i</span>
+                <span class="fade-in brand-primary brand-title-hide">p</span>
+                <span class="fade-in brand-primary brand-title-hide">p</span>
+                <span class="fade-in brand-primary brand-title-hide">e</span>
+                <span class="fade-in brand-primary brand-title-hide">d </span>
+                <span class="fade-in brand-alt">B</span>
+                <span class="fade-in brand-alt brand-title-hide">r</span>
+                <span class="fade-in brand-alt brand-title-hide">a</span>
+                <span class="fade-in brand-alt brand-title-hide">i</span>
+                <span class="fade-in brand-alt brand-title-hide">n</span>
+            </span>
+        </div>
+
+        <div class="container text-center m-t-2">
+            <span class="color-grey-darkened d-block">Contact</span>
+            <small>
+                <a href="mailto:info@shippedbrain.com" class="color-grey-light link">info@shippedbrain.com</a>
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>
